@@ -1,0 +1,27 @@
+.colon-card button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.About_this_post{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+
+}
+.home_About_colon{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 5%;
+    left: -150%;
+}
+
+.report_home .modal .modal-backdrop {
+    --bs-backdrop-opacity: 0.8;
+}
+.blur-background {
+    filter: blur(10px);
+    transition: filter 0.3s ease-in-out;
+  }

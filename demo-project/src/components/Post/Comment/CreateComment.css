@@ -1,0 +1,116 @@
+/* #CommentList{
+  position: relative;
+
+  .text-small{
+    padding: 8px;
+    width:auto;
+    font: 400 0.8rem cursive;
+    height:auto;
+    cursor: pointer;
+  }
+
+  .text-small:hover{
+    background-color: #dfdcdc;
+    border-radius: 48%;
+
+  }
+
+  .commment-more{
+    position:relative;
+    margin-left: 4rem;
+  }
+  .comment-actions{
+    position: absolute;
+    
+    .dropdown-item{
+      font-size: 0.7rem;
+    }
+    .dropdown-item:hover{
+      background-color: #dfdcdc;
+      border-radius: 5px;
+    }
+  }
+} */
+
+/* CreateComment.css */
+.comment-form-container {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.comment-form-container form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.comment-form-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment-form-container textarea {
+  border: none;
+  border-bottom: 1px solid #ccc; 
+  outline: none;
+  box-shadow: none;
+  font-family: cursive;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 14px;
+  resize: none;
+}
+
+.comment-form-container textarea:focus {
+  border-bottom-color: #000;
+}
+
+.comment-form-container .btn-comment {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline:none;
+  box-shadow: none;
+}
+
+.comment-form-container .btn-comment:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.comment-form-container .emoji-container {
+  position: absolute;
+  bottom: 100%; 
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comment-form-container .emoji-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline:none;
+  box-shadow: none;
+}
+
+.comment-form-container .emoji-icon {
+  color: #F4C430;
+  font-size: 20px;
+}
+
+.comment-form-container .btn .send-icon {
+  color: #000;
+  font-size: 22px;
+  margin-right:1rem;
+}

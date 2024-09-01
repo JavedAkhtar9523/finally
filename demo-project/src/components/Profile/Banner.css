@@ -1,0 +1,26 @@
+.banner_img img{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    
+    background-position: cover;
+}
+.banner_profile{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    /* background-color: rgba(116, 97, 97, 0.314); */
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+.banner_img{
+    /* width: 70%; */
+    margin: 40px auto;
+    position:relative;
+}
+.banner_profile img{
+    border-radius: 50%;
+    height: 185px;
+    width: 185px;
+}

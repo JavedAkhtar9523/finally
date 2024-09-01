@@ -1,0 +1,37 @@
+.comment-textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    height: 40px;
+    padding: 5px;
+  }
+  
+  .comment-textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .gif-span {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .gif-span:hover {
+    background-color: #b3b3b3;
+  }
+  
+  .emoji-picker {
+    position: absolute;
+    z-index: 1000;
+    margin-top:-450px;
+    margin-left:-150px;
+  }
+  

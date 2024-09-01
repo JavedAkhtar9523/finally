@@ -1,0 +1,148 @@
+
+.profile-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.container-fluid{
+    --bs-gutter-x: 0rem;
+}
+.row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+}
+.profile-container .cover-img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    
+
+
+}
+.profile-container .cover-img .setting-icon{
+    position: absolute;
+    font-size: 2rem;
+    top: 0.3rem;
+    right: 0.5rem;
+    color: rgb(188, 182, 182);
+}
+.profile-container .cover-img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.profile-container .avatar-box{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    .avatar{
+        margin-top: -50px;
+        margin-left: 1rem;
+        position: relative;
+    }
+    .avatar img{
+        border-radius: 50%;
+        width: 120px;
+        height:120px;    
+        
+    }
+    /* .avatar .plus-icons{
+        position: absolute;
+        margin-top: 4rem;
+        margin-left: -1.2rem;
+        color: rgb(40, 144, 185);
+    } */
+
+}
+
+
+.profile-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    
+}
+
+.profile-content .bio{
+    color: rgb(13, 13, 13);
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 14px;
+    }
+}
+.badge{
+    background-color: rgb(224, 224, 224);
+    color: rgb(1, 1, 1);
+    font-weight: 300;
+}
+.additional-box{
+    p{
+       line-height: 12px; 
+    }
+    a{
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+    }
+
+}
+
+chart-graph {
+    width: 250px;  /* Adjusted size */
+    height: 250px; /* Adjusted size */
+    margin-top: 2rem;
+    text-align: right;
+}
+.chart{
+    column-count: 2;
+    column-rule-width: 2px;
+    column-rule-style: solid;
+    column-rule-color: rgba(0, 0, 0, 0.521);
+    column-width: 100%;
+}
+.chart .chart-list{
+    margin: 2rem 2rem;
+    padding: 0rem 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    h4{
+        font-size: 1.2rem;
+        font-weight: bold;    
+    }
+}
+
+.btn.active{
+    background-color: #d0ddef;
+    border: none;
+    border-color: none;
+}
+.profile-btn{
+    .btns{
+        background-image: linear-gradient(skyblue,rgb(236, 168, 179));     
+        outline: none;
+        margin-left: 1rem;
+        border-radius: 5px;
+        color:black;
+        font-size: 1rem;
+     }
+}
+.feature{
+    select{
+        border: none;
+        font-size: 0.8rem;
+        border-bottom: 1px solid gray;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        outline: none;
+    }
+}
+.crollable-content{
+    height: 100vh;
+    background-color: transparent;
+}
