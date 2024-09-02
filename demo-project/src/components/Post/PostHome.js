@@ -4,7 +4,7 @@ import { BsFillCheckCircleFill, BsPlusCircleDotted } from "react-icons/bs";
 import { BiDotsVerticalRounded, BiComment } from "react-icons/bi";
 import { MdOutlineThumbUp, MdShare } from "react-icons/md";
 import { BiSolidLike } from "react-icons/bi";
-import {IoIosShareAlt} from 'react-icons/io';
+import { IoIosShareAlt } from "react-icons/io";
 import TimeAgo from "react-timeago";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
@@ -36,12 +36,12 @@ function PostHome({ posts }) {
   // const [replies, setReplies] = useState([]);
 
   const colonRef = useRef(null);
-  const textCount = 100;
+  const textCount = 200;
   const dispatch = useDispatch();
 
   const { user } = useSelector((state) => state.user);
   const userId = user?._id;
- 
+
   const isLiked = posts?.likes?.includes(userId);
 
   const handleLike = () => {
@@ -55,7 +55,7 @@ function PostHome({ posts }) {
     dispatch(restLikePost());
   };
   const handleRepost = () => {
-    dispatch(repostPost(posts._id)); 
+    dispatch(repostPost(posts._id));
   };
 
   const handleColon = () => {
@@ -143,7 +143,7 @@ function PostHome({ posts }) {
                 //   zIndex: "1000",
                 //   marginTop: "-3.6rem",
                 // }}
-                style={{top: "-32px", right: "-8px", zIndex: "1000"}}
+                style={{ top: "-32px", right: "-8px", zIndex: "1000" }}
               >
                 <ColonCard
                   handleShare={handleShare}
@@ -204,9 +204,7 @@ function PostHome({ posts }) {
             />
           </div>
         )}
-        {posts.poll && (
-          <PollCard poll={posts.poll} />
-        )}
+        {posts.poll && <PollCard poll={posts.poll} />}
 
         {/* ------------------------------- */}
         {/* <div className="d-flex justify-content-between align-items-center mt-1 p-1">
@@ -272,13 +270,9 @@ function PostHome({ posts }) {
               <FaRegComment />
               <span className="action-count">{posts?.comments?.length}</span>
             </button>
-            <button className="action-btn repost-btn"
-             onClick={handleRepost}
-            >
+            <button className="action-btn repost-btn" onClick={handleRepost}>
               <BiRepost />
-              <span className="action-count">
-                {posts?.repostCount}
-              </span>
+              <span className="action-count">{posts?.repostCount}</span>
             </button>
 
             <button
@@ -303,17 +297,18 @@ function PostHome({ posts }) {
           />
         ))}
       </div> */}
-      {commentBox && <CreateComent postId={posts?._id} avatar={user?.avatar[0]?.url}/>}
+      {commentBox && (
+        <CreateComent postId={posts?._id} avatar={user?.avatar[0]?.url} />
+      )}
       {/* <button onClick={() => setCommentBox(!commentBox)}>Comment</button> */}
-      <NavLink 
-        to={`/comment/${posts?._id}`} 
-        style={{ textDecoration: 'none', color: 'gray',fontSize:'0.8rem' }} 
-        className='text-small'
+      <NavLink
+        to={`/comment/${posts?._id}`}
+        style={{ textDecoration: "none", color: "gray", fontSize: "0.8rem" }}
+        className="text-small"
       >
-       View all {posts?.comments?.length} comments
-     </NavLink>
-    
-  </div>
+        View all {posts?.comments?.length} comments
+      </NavLink>
+    </div>
   );
 }
 

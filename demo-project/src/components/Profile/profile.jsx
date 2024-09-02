@@ -475,7 +475,10 @@ const Profile = ({ scrollableContentRef }) => {
             className="main-left d-flex flex-column align-items-center"
             style={{ marginTop: "1rem" }}
           >
-            <Spread_news />
+            <div style={{ width: "88%", marginLeft: "33px" }}>
+              <Spread_news />
+            </div>
+
             <MatchCard data={users.other} title="Top Search" />
             <TakeATour />
             <div>

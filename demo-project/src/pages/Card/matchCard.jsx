@@ -90,7 +90,7 @@ const MatchCard = ({ title, data }) => {
   const previewCardCount = 2;
 
   return (
-    <div className="match-container" style={{ width: "90%" }}>
+    <div className="match-container" style={{ width: "80%" }}>
       <div className="card p-1 border-0" style={{ width: "100%" }}>
         <h6 className="card-title p-2 fw-bolder text-secondary">{title}</h6>
         {expand

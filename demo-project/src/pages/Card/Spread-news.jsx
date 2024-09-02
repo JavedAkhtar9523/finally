@@ -60,6 +60,7 @@ const Spread_News = () => {
               e.preventDefault();
               setShowMore(!showMore);
             }}
+            style={{ marginLeft: "25px" }}
           >
             {showMore ? "See less" : "See more"}
           </a>

@@ -206,7 +206,7 @@ export default function ChartComponent() {
       <div
         style={{
           position: "absolute",
-          top: "33.5%",
+          top: "31%",
           left: "78%",
           transform: "translate(-50%, -50%)",
           fontSize: "36px",
