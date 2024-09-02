@@ -7,11 +7,19 @@ const Home = () => {
   return (
     <Fragment>
       <div className="banner-home">
-        <p>Welcome to AmbiSpine Techonology</p>
-        <h1>FIND ACCESS BELOW</h1>
+        <h3 style={{ marginBottom: "200px" }}>
+          Welcome to AmbiSpine Techonology
+        </h3>
+        {/* <h1>FIND ACCESS BELOW</h1> */}
 
         <a href="#container">
-          <button style={{ backgroundColor: "#0247FE", color: "white" }}>
+          <button
+            style={{
+              backgroundColor: "#0247FE",
+              color: "white",
+              marginTop: "110px",
+            }}
+          >
             Scroll <CgMouse />
           </button>
         </a>
